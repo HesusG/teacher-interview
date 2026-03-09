@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTE AI Trainer — Interview Prep</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-content">
+      <h1>CTE AI Trainer — Interview Preparation</h1>
+      <div class="header-meta">
+        <span class="deadline-badge">Due: Mar 11, 2026 — 5:45 PM</span>
+        <div class="timer-widget">
+          <span id="timer-display">53:00</span>
+          <button class="timer-btn" id="timer-start">Start</button>
+          <button class="timer-btn" id="timer-reset">Reset</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="main-nav" id="main-nav">
+    <div class="nav-inner">
+      <button class="nav-btn active" data-section="overview">Overview</button>
+      <button class="nav-btn" data-section="cte">CTE Practices</button>
+      <button class="nav-btn" data-section="ai">AI Integration</button>
+      <button class="nav-btn" data-section="virtual">Virtual Classroom</button>
+      <button class="nav-btn" data-section="assessment">Assessment</button>
+      <button class="nav-btn" data-section="questions">Interview Q&A</button>
+      <button class="nav-btn" data-section="exercises">Exercise Prep</button>
+      <button class="nav-btn" data-section="trends">Industry Trends</button>
+      <button class="nav-btn" data-section="reference">Quick Reference</button>
+    </div>
+  </nav>
+
+  <!-- ========== PROGRESS ========== -->
+  <div class="progress-container">
+    <div class="progress-wrapper">
+      <span>Study Progress:</span>
+      <div class="progress-track">
+        <div id="progress-bar"></div>
+      </div>
+      <span id="progress-text">0/9</span>
+    </div>
+  </div>
+
+  <!-- ========== SEARCH ========== -->
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Search topics, keywords, questions..." aria-label="Search interview prep content">
+  </div>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="main-content">
+
+    <!-- ===== OVERVIEW ===== -->
+    <section id="section-overview" class="section active">
+      <div class="section-header">
+        <h2>Role Overview</h2>
+        <p>Career & Technical Education Teacher, Postsecondary — AI Trainer</p>
+      </div>
+
+      <div class="overview-grid">
+        <div class="overview-stat">
+          <div class="stat-value">53 min</div>
+          <div class="stat-label">Interview Duration</div>
+        </div>
+        <div class="overview-stat">
+          <div class="stat-value">AI + Exercise</div>
+          <div class="stat-label">Interview Format</div>
+        </div>
+        <div class="overview-stat">
+          <div class="stat-value">5 Focus Areas</div>
+          <div class="stat-label">Evaluation Domains</div>
+        </div>
+      </div>
+
+      <div class="card searchable-card" data-keywords="focus areas evaluation domains">
+        <h3>Interview Focus Areas</h3>
+        <div class="focus-tags">
+          <span class="focus-tag">Postsecondary/Adult Vocational Instruction</span>
+          <span class="focus-tag">AI Integration into Curriculum</span>
+          <span class="focus-tag">Virtual Classroom Management</span>
+          <span class="focus-tag">Assessment & Progress Monitoring</span>
+          <span class="focus-tag">Technical Domain Familiarity</span>
+        </div>
+      </div>
+
+      <div class="card searchable-card" data-keywords="key responsibilities role job summary">
+        <h3>Key Responsibilities</h3>
+        <ul class="key-points">
+          <li>Deliver engaging lectures and practical training using modern instructional tools, visual aids, and multimedia</li>
+          <li>Monitor, assess, and document student progress through written, oral, and performance-based evaluations</li>
+          <li>Provide individualized support, remedial instruction, and constructive feedback</li>
+          <li>Supervise safe and effective use of tools, equipment, and technology remotely</li>
+          <li>Integrate AI trends and best practices into curriculum design and instructional activities</li>
+          <li>Stimulate class discussions and collaborative problem-solving</li>
+          <li>Collaborate with educators and industry partners on workforce-aligned content</li>
+        </ul>
+      </div>
+
+      <div class="card searchable-card" data-keywords="qualifications skills requirements">
+        <h3>Required Qualifications</h3>
+        <ul class="key-points">
+          <li>Bachelor's degree in Career & Technical Education or related technical field</li>
+          <li>Proven experience teaching vocational/occupational courses at postsecondary level</li>
+          <li>Strong written and verbal communication skills</li>
+          <li>Hands-on familiarity with tools, equipment, and instructional technologies</li>
+          <li>Demonstrated ability to incorporate AI concepts and digital resources</li>
+          <li>Exceptional organizational, assessment, and classroom management skills virtually</li>
+          <li>Ability to provide supportive, individualized instruction for diverse learners</li>
+        </ul>
+      </div>
+
+      <div class="card searchable-card" data-keywords="preparation checklist study plan">
+        <h3>Preparation Checklist</h3>
+        <ul class="prep-checklist">
+          <li><input type="checkbox" class="section-check" data-section="overview" aria-label="Complete Overview"> Review role overview and requirements</li>
+          <li><input type="checkbox" class="section-check" data-section="cte" aria-label="Complete CTE Practices"> Study CTE best practices and adult learning theory</li>
+          <li><input type="checkbox" class="section-check" data-section="ai" aria-label="Complete AI Integration"> Prepare AI integration examples and talking points</li>
+          <li><input type="checkbox" class="section-check" data-section="virtual" aria-label="Complete Virtual Classroom"> Review virtual classroom management strategies</li>
+          <li><input type="checkbox" class="section-check" data-section="assessment" aria-label="Complete Assessment"> Study assessment and progress monitoring approaches</li>
+          <li><input type="checkbox" class="section-check" data-section="questions" aria-label="Complete Interview Q&A"> Practice interview questions with STAR responses</li>
+          <li><input type="checkbox" class="section-check" data-section="exercises" aria-label="Complete Exercise Prep"> Review exercise prep and sample lesson plan</li>
+          <li><input type="checkbox" class="section-check" data-section="trends" aria-label="Complete Industry Trends"> Study industry trends and workforce developments</li>
+          <li><input type="checkbox" class="section-check" data-section="reference" aria-label="Complete Quick Reference"> Review quick reference — STAR method, power phrases, AI tips</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== CTE BEST PRACTICES ===== -->
+    <section id="section-cte" class="section">
+      <div class="section-header">
+        <h2>CTE Best Practices</h2>
+        <p>Core instructional strategies for postsecondary adult vocational education</p>
+      </div>
+
+      <div class="card searchable-card" data-keywords="andragogy adult learning theory malcolm knowles self-directed">
+        <span class="card-label label-cte">Adult Learning</span>
+        <h3>Andragogy — Adult Learning Theory (Malcolm Knowles)</h3>
+        <p>Adults learn differently from children. Knowles identified six key principles that guide effective adult education:</p>
+        <ol>
+          <li><strong>Need to Know</strong> — Adults need to understand WHY they're learning something before engaging</li>
+          <li><strong>Self-Concept</strong> — Adults are self-directed and resist being told what to do; involve them in planning</li>
+          <li><strong>Prior Experience</strong> — Adults bring rich life and work experience that should be honored and leveraged</li>
+          <li><strong>Readiness</strong> — Adults learn best when content is immediately applicable to their real-life situations</li>
+          <li><strong>Orientation</strong> — Adults prefer problem-centered learning over abstract, subject-centered approaches</li>
+          <li><strong>Motivation</strong> — Internal motivators (job satisfaction, self-esteem) outweigh external ones (grades, credentials)</li>
+        </ol>
+        <h4 style="margin-top:1rem;color:#2c5282;">Practical Applications:</h4>
+        <ul>
+          <li>Start every lesson by explaining real-world application and career relevance</li>
+          <li>Use learners' work experiences as discussion starters and case studies</li>
+          <li>Offer choices in assignments to honor self-direction</li>
+          <li>Connect every lesson to a workplace scenario they'll encounter</li>
+        </ul>
+      </div>
+
+      <div class="card searchable-card" data-keywords="competency-based education CBE mastery credentials certification">
+        <span class="card-label label-cte">CBE</span>
+        <h3>Competency-Based Education (CBE)</h3>
+        <p>Students progress by demonstrating mastery of specific competencies rather than seat time. Essential in CTE where employers need verified skills. Aligns with industry certifications and credentialing.</p>
+        <ul>
+          <li>Define clear competency statements aligned with industry standards</li>
+          <li>Allow multiple attempts at demonstrations with feedback loops</li>
+          <li>Use digital badges or micro-credentials to track mastery</li>
+          <li>Map curriculum to industry certification requirements (OSHA, NCCER, ASE)</li>
+        </ul>
+      </div>
+
+      <div class="card searchable-card" data-keywords="work-based learning apprenticeship internship simulation">
+        <span class="card-label label-cte">WBL</span>
+        <h3>Work-Based Learning (WBL)</h3>
+        <p>Integrating real workplace experiences into instruction — apprenticeships, internships, simulations, and project-based scenarios that mirror actual job tasks.</p>
+        <ul>
+          <li>Virtual job shadowing and industry guest speakers via video</li>
+          <li>Simulated work environments using VR/AR tools</li>
+          <li>Capstone projects modeled on real industry problems</li>
+          <li>Portfolio development documenting hands-on competencies</li>
+        </ul>
+      </div>
+
+      <div class="card searchable-card" data-keywords="differentiation diverse learners UDL universal design accessibility">
+        <span class="card-label label-cte">Differentiation</span>
+        <h3>Differentiated Instruction for Diverse Learners</h3>
+        <p>Adult vocational learners come with varying backgrounds, skill levels, and learning needs. Differentiation in content, process, product, and environment ensures equity and access.</p>
+        <ul>
+          <li>Offer multiple modalities: video, text, hands-on, audio</li>
+          <li>Scaffold complex technical content with prerequisite checks</li>
+          <li>Use Universal Design for Learning (UDL) guidelines</li>
+          <li>Provide accommodations for learners with disabilities per ADA</li>
+        </ul>
+      </div>
+
+      <div class="card searchable-card" data-keywords="project-based learning PBL trades construction manufacturing">
+        <span class="card-label label-cte">PBL</span>
+        <h3>Project-Based Learning in Trades</h3>
+        <p>Learners tackle real-world problems that require applying multiple technical skills. Promotes critical thinking, collaboration, and deep understanding.</p>
+        <ul>
+          <li><strong>Construction:</strong> Design and estimate a residential renovation project</li>
+          <li><strong>Manufacturing:</strong> Develop a quality control plan for a production line</li>
+          <li><strong>Transportation:</strong> Diagnose and create repair plan for a complex vehicle system</li>
+          <li><strong>Cosmetology:</strong> Create a complete client consultation and service plan</li>
+        </ul>
+      </div>
+
+      <div class="card searchable-card" data-keywords="culturally responsive teaching equity diversity inclusion">
+        <span class="card-label label-cte">Equity</span>
+        <h3>Culturally Responsive Teaching</h3>
+        <p>Acknowledge and incorporate learners' cultural backgrounds, life experiences, and perspectives into instruction. Critical for diverse adult populations in CTE.</p>
+        <ul>
+          <li>Use examples and case studies from diverse cultural contexts</li>
+          <li>Invite students to share how their culture intersects with their trade</li>
+          <li>Ensure materials represent diverse workers in technical fields</li>
+          <li>Address systemic barriers to entry in skilled trades</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== AI INTEGRATION ===== -->
+    <section id="section-ai" class="section">
+      <div class="section-header">
+        <h2>AI Integration</h2>
+        <p>Strategies for integrating AI concepts into vocational curriculum and training delivery</p>
+      </div>
+
+      <div class="card searchable-card" data-keywords="AI diagnostic predictive maintenance quality control trades">
+        <span class="card-label label-ai">AI in Trades</span>
+        <h3>AI-Powered Diagnostic & Predictive Tools in Trades</h3>
+        <p>Modern trades increasingly use AI for diagnostics, predictive maintenance, and quality control. Teaching students to work alongside AI tools is essential for workforce readiness.</p>
+        <div class="tools-grid">
+          <span class="tool-tag">Mitchell AI Diagnostics</span>
+          <span class="tool-tag">ALLDATA</span>
+          <span class="tool-tag">Predictive Sensors</span>
+          <span class="tool-tag">Computer Vision QC</span>
+          <span class="tool-tag">AI Estimating Software</span>
+        </div>
+        <p style="margin-top:0.75rem"><strong>Teaching Approach:</strong> Demonstrate AI tools in context, then have students practice interpretation of AI outputs and learn when to trust vs. question AI recommendations.</p>
+      </div>
+
+      <div class="card searchable-card" data-keywords="AI literacy non-technical learners foundational concepts">
+        <span class="card-label label-ai">AI Literacy</span>
+        <h3>AI Literacy for Non-Technical Learners</h3>
+        <p>Teaching foundational AI concepts without requiring coding or deep technical knowledge. Focus on what AI is, how it works at a high level, its applications in their trade, and ethical considerations.</p>
+        <div class="tools-grid">
+          <span class="tool-tag">Google Teachable Machine</span>
+          <span class="tool-tag">ChatGPT / Claude</span>
+          <span class="tool-tag">AI Image Generators</span>
+          <span class="tool-tag">Industry AI Demos</span>
+        </div>
+        <p style="margin-top:0.75rem"><strong>Teaching Approach:</strong> Use analogies from their trade. Start with AI they already use (phone, GPS, spell-check) and build to trade-specific applications.</p>
+      </div>
+
+      <div class="card searchable-card" data-keywords="AI curriculum design adaptive learning analytics personalized">
+        <span class="card-label label-ai">Curriculum Design</span>
+        <h3>AI-Enhanced Curriculum Design</h3>
+        <p>Using AI tools to create better instructional materials, personalize learning paths, generate assessment items, and analyze student performance data.</p>
+        <div class="tools-grid">
+          <span class="tool-tag">AI Problem Generation</span>
+          <span class="tool-tag">ALEKS / Smart Sparrow</span>
+          <span class="tool-tag">Analytics Dashboards</span>
+          <span class="tool-tag">NLP Feedback Tools</span>
+        </div>
+        <p style="margin-top:0.75rem"><strong>Teaching Approach:</strong> Model transparency — show students how you use AI in your teaching so they see responsible AI use firsthand.</p>
+      </div>
+
+      <div class="card searchable-card" data-keywords="AI ethics bias privacy workforce impact responsible">
+        <span class="card-label label-ai">Ethics</span>
+        <h3>Ethical AI & Workforce Impact</h3>
+        <p>Address how AI is changing job landscapes in skilled trades. Discuss augmentation vs. replacement, bias in AI systems, data privacy, and the importance of human judgment.</p>
+        <div class="tools-grid">
+          <span class="tool-tag">IEEE Ethics Framework</span>
+          <span class="tool-tag">NIST AI RMF</span>
+          <span class="tool-tag">Trade Case Studies</span>
+          <span class="tool-tag">BLS / OECD Reports</span>
+        </div>
+        <p style="margin-top:0.75rem"><strong>Teaching Approach:</strong> Facilitate structured debates and discussions. Present real-world scenarios where AI in trades created both opportunities and challenges.</p>
+      </div>
+
+      <div class="card searchable-card" data-keywords="prompt engineering generative AI technical documentation writing">
+        <span class="card-label label-ai">Prompt Engineering</span>
+        <h3>Prompt Engineering for Technical Professionals</h3>
+        <p>Teaching students to effectively use generative AI tools for technical documentation, troubleshooting guides, safety protocols, and professional communication.</p>
+        <div class="tools-grid">
+          <span class="tool-tag">ChatGPT / Claude</span>
+          <span class="tool-tag">Safety Checklists</span>
+          <span class="tool-tag">Code Generation</span>
+          <span class="tool-tag">Manual Translation</span>
+        </div>
+        <p style="margin-top:0.75rem"><strong>Teaching Approach:</strong> Hands-on workshops where students craft prompts for their specific trade tasks, evaluate outputs critically, and refine for accuracy.</p>
+      </div>
+
+      <div class="card searchable-card" data-keywords="AI assessment personalized learning adaptive testing feedback">
+        <span class="card-label label-ai">AI Assessment</span>
+        <h3>AI in Assessment & Personalized Learning</h3>
+        <p>Leverage AI to create adaptive assessments, provide instant feedback, identify struggling students early, and customize learning pathways based on performance data.</p>
+        <div class="tools-grid">
+          <span class="tool-tag">Auto Quiz Generation</span>
+          <span class="tool-tag">Plagiarism Detection</span>
+          <span class="tool-tag">Learning Analytics</span>
+          <span class="tool-tag">Intelligent Tutoring</span>
+        </div>
+        <p style="margin-top:0.75rem"><strong>Teaching Approach:</strong> Use AI assessment data to inform instruction while maintaining human judgment in final evaluations. Combine AI efficiency with instructor expertise.</p>
+      </div>
+    </section>
+
+    <!-- ===== VIRTUAL CLASSROOM ===== -->
+    <section id="section-virtual" class="section">
+      <div class="section-header">
+        <h2>Virtual Classroom Management</h2>
+        <p>Strategies for effective virtual instruction in postsecondary CTE programs</p>
+      </div>
+
+      <div class="card searchable-card" data-keywords="synchronous engagement breakout rooms polls live">
+        <span class="card-label label-virtual">Synchronous</span>
+        <h3>Synchronous Engagement Strategies</h3>
+        <p>Keep adult learners actively engaged during live virtual sessions:</p>
+        <ul>
+          <li>Use polls and quick checks every 10-15 minutes to maintain engagement</li>
+          <li>Implement breakout rooms for small-group technical discussions</li>
+          <li>Use screen sharing for live demonstrations of tools and techniques</li>
+          <li>Cold-call respectfully and use think-pair-share adapted for virtual</li>
+          <li>Keep lectures to 15-20 minute chunks, interspersed with activities</li>
+          <li>Use virtual whiteboards (Miro, Jamboard) for collaborative problem-solving</li>
+        </ul>
+      </div>
+
+      <div class="card searchable-card" data-keywords="asynchronous self-paced LMS modules video working adults">
+        <span class="card-label label-virtual">Asynchronous</span>
+        <h3>Asynchronous Learning Design</h3>
+        <p>Design self-paced content that works for adult learners balancing work, family, and education:</p>
+        <ul>
+          <li>Create modular video content (5-10 min segments) for flexible viewing</li>
+          <li>Use discussion boards with structured prompts tied to workplace scenarios</li>
+          <li>Provide clear due dates with built-in flexibility for working adults</li>
+          <li>Offer choice boards allowing learners to demonstrate competency their way</li>
+          <li>Record all synchronous sessions for later review</li>
+          <li>Use LMS tools (Canvas, Blackboard, Moodle) to organize and track progress</li>
+        </ul>
+      </div>
+
+      <div class="card searchable-card" data-keywords="hands-on skills remote VR AR lab kits video demonstrations">
+        <span class="card-label label-virtual">Hands-On</span>
+        <h3>Hands-On Skills in a Virtual Environment</h3>
+        <p>The biggest challenge in virtual CTE — teaching hands-on skills remotely:</p>
+        <ul>
+          <li>Use VR/AR simulations for equipment operation and safety procedures</li>
+          <li>Assign take-home lab kits with video-guided exercises</li>
+          <li>Have students video-record their hands-on practice for instructor review</li>
+          <li>Partner with local employers for supervised practice sites</li>
+          <li>Use detailed video demonstrations with multiple camera angles</li>
+          <li>Leverage 3D modeling software for technical visualization</li>
+        </ul>
+      </div>
+
+      <div class="card searchable-card" data-keywords="technology tools platforms LMS Canvas Zoom Teams">
+        <span class="card-label label-virtual">Tools</span>
+        <h3>Technology & Tools for Virtual CTE</h3>
+        <p>Essential platforms and tools for effective virtual vocational instruction:</p>
+        <div class="tools-grid">
+          <span class="tool-tag">Canvas / Blackboard</span>
+          <span class="tool-tag">Moodle / Google Classroom</span>
+          <span class="tool-tag">Zoom / Teams</span>
+          <span class="tool-tag">Labster / zSpace</span>
+          <span class="tool-tag">Miro / Padlet</span>
+          <span class="tool-tag">Kahoot / Quizlet</span>
+          <span class="tool-tag">Canva / Loom</span>
+          <span class="tool-tag">H5P Interactive</span>
+        </div>
+      </div>
+
+      <div class="card searchable-card" data-keywords="community isolation dropout engagement peer support">
+        <span class="card-label label-virtual">Community</span>
+        <h3>Building Community & Reducing Isolation</h3>
+        <p>Adult online learners are at high risk for isolation and dropout. Intentional community building is critical:</p>
+        <ul>
+          <li>Start each session with a brief check-in or icebreaker</li>
+          <li>Create study groups or learning circles that meet independently</li>
+          <li>Use Slack or Discord channels for informal peer support</li>
+          <li>Schedule virtual office hours at varied times for accessibility</li>
+          <li>Celebrate achievements publicly — completions, certifications, milestones</li>
+          <li>Share industry news and job opportunities to maintain motivation</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== ASSESSMENT ===== -->
+    <section id="section-assessment" class="section">
+      <div class="section-header">
+        <h2>Assessment & Progress Monitoring</h2>
+        <p>Multi-modal strategies for evaluating vocational learner progress</p>
+      </div>
+
+      <div class="card searchable-card" data-keywords="performance-based assessment demonstration portfolio capstone">
+        <span class="card-label label-assessment">Performance</span>
+        <h3>Performance-Based Assessment</h3>
+        <p>Evaluate students by observing them perform real-world tasks. The gold standard for CTE assessment:</p>
+        <ul>
+          <li>Skill demonstrations via live video or recorded submission</li>
+          <li>Rubric-scored practical exercises aligned with industry standards</li>
+          <li>Portfolio assessment — curated collection of work samples</li>
+          <li>Capstone projects integrating multiple competencies</li>
+          <li>Industry certification exam preparation and pass rates</li>
+        </ul>
+      </div>
+
+      <div class="card searchable-card" data-keywords="formative assessment exit tickets polls checks ongoing">
+        <span class="card-label label-assessment">Formative</span>
+        <h3>Formative Assessment Strategies</h3>
+        <p>Ongoing, low-stakes assessments to monitor learning and adjust instruction in real-time:</p>
+        <ul>
+          <li>Exit tickets after each session (digital — Google Forms, Mentimeter)</li>
+          <li>Think-alouds during problem-solving demonstrations</li>
+          <li>Peer assessment with structured feedback rubrics</li>
+          <li>Quick polls and knowledge checks during live sessions</li>
+          <li>Learning journals documenting skill development reflections</li>
+          <li>One-minute papers summarizing key takeaways</li>
+        </ul>
+      </div>
+
+      <div class="card searchable-card" data-keywords="summative assessment exam final project certification">
+        <span class="card-label label-assessment">Summative</span>
+        <h3>Summative Assessment Approaches</h3>
+        <p>High-stakes evaluations measuring overall mastery at end of units or courses:</p>
+        <ul>
+          <li>Comprehensive practical exams simulating real work scenarios</li>
+          <li>Written exams covering technical knowledge and safety protocols</li>
+          <li>Oral presentations demonstrating technical communication skills</li>
+          <li>Final project defense or exhibition of competencies</li>
+          <li>Industry certification alignment and testing</li>
+        </ul>
+      </div>
+
+      <div class="card searchable-card" data-keywords="progress monitoring documentation tracking early alert compliance">
+        <span class="card-label label-assessment">Monitoring</span>
+        <h3>Progress Monitoring & Documentation</h3>
+        <p>Systematic tracking of student progress toward competency attainment:</p>
+        <ul>
+          <li>Digital competency checklists updated throughout the course</li>
+          <li>Regular progress conferences (virtual one-on-ones)</li>
+          <li>LMS analytics — login frequency, assignment completion, quiz scores</li>
+          <li>Early alert systems for students falling behind</li>
+          <li>Individualized learning plans for students needing additional support</li>
+          <li>Detailed records for compliance and accreditation requirements</li>
+        </ul>
+      </div>
+
+      <div class="card searchable-card" data-keywords="rubric design technical skills industry standards OSHA NCCER">
+        <span class="card-label label-assessment">Rubrics</span>
+        <h3>Rubric Design for Technical Skills</h3>
+        <p>Well-designed rubrics ensure consistent, fair, and transparent evaluation:</p>
+        <ul>
+          <li>Use industry standards (OSHA, NCCER, ASE) as rubric anchors</li>
+          <li>Include both process (how) and product (what) criteria</li>
+          <li>Define levels: Novice &rarr; Developing &rarr; Proficient &rarr; Expert</li>
+          <li>Provide exemplars at each performance level</li>
+          <li>Include safety compliance as a non-negotiable threshold criterion</li>
+          <li>Share rubrics with students before assessment for transparency</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== INTERVIEW Q&A ===== -->
+    <section id="section-questions" class="section">
+      <div class="section-header">
+        <h2>Interview Questions & Guidance</h2>
+        <p>Likely questions with STAR-method guidance and key talking points</p>
+      </div>
+
+      <div class="accordion" id="questions-accordion">
+
+        <div class="accordion-item searchable-card" data-keywords="AI integration curriculum vocational technical">
+          <button class="accordion-header">
+            <span><span class="card-label label-ai">AI Integration</span> How do you integrate AI concepts into vocational/technical curriculum?</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              <p><strong>Guidance:</strong> Use STAR method. Describe a specific example where you incorporated AI tools or concepts into a CTE lesson. Emphasize practical, workforce-relevant applications.</p>
+              <h4>Key Talking Points:</h4>
+              <ul>
+                <li>Introduced AI-powered diagnostic tools in automotive/trade curriculum</li>
+                <li>Had students compare AI-generated estimates with manual calculations</li>
+                <li>Taught prompt engineering for technical documentation</li>
+                <li>Used AI ethics discussions around automation in their trade</li>
+                <li>Measured student engagement and learning outcomes improvement</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item searchable-card" data-keywords="assessment adult learners virtual environment evaluate">
+          <button class="accordion-header">
+            <span><span class="card-label label-assessment">Assessment</span> Describe your approach to assessing adult learners in a virtual environment.</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              <p><strong>Guidance:</strong> Show multi-modal assessment approach. Emphasize both formative and summative methods, and how you ensure academic integrity remotely.</p>
+              <h4>Key Talking Points:</h4>
+              <ul>
+                <li>Use performance-based assessments via video submission</li>
+                <li>Implement competency checklists aligned with industry certifications</li>
+                <li>Regular formative checks — polls, exit tickets, reflection journals</li>
+                <li>Portfolio assessment for documenting skill progression</li>
+                <li>Ensure equity by offering multiple ways to demonstrate mastery</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item searchable-card" data-keywords="engagement virtual classroom adult learners manage">
+          <button class="accordion-header">
+            <span><span class="card-label label-virtual">Virtual Classroom</span> How do you manage engagement in a virtual classroom with adult learners?</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              <p><strong>Guidance:</strong> Be specific about strategies and tools. Address the unique challenges of adult learners — work schedules, family obligations, varying tech comfort levels.</p>
+              <h4>Key Talking Points:</h4>
+              <ul>
+                <li>Chunk content into 15-20 min segments with active learning breaks</li>
+                <li>Use breakout rooms, polls, and collaborative tools (Miro, Padlet)</li>
+                <li>Record sessions and provide asynchronous alternatives</li>
+                <li>Create a supportive community via peer groups and informal channels</li>
+                <li>Use andragogy principles — connect all content to real-world application</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item searchable-card" data-keywords="differentiate instruction diverse learners accommodate">
+          <button class="accordion-header">
+            <span><span class="card-label label-cte">CTE Practices</span> Tell me about a time you differentiated instruction for diverse learners.</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              <p><strong>Guidance:</strong> STAR method. Show awareness of diverse needs — language, prior experience, disabilities, cultural backgrounds. Demonstrate concrete accommodations.</p>
+              <h4>Key Talking Points:</h4>
+              <ul>
+                <li>Pre-assessed student skill levels to create targeted learning groups</li>
+                <li>Offered multiple modalities — video, text, hands-on, audio</li>
+                <li>Applied UDL principles for accessible content design</li>
+                <li>Provided scaffolded materials for varying technical backgrounds</li>
+                <li>Result: improved completion rates and learner satisfaction</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item searchable-card" data-keywords="industry trends current workforce needs stay updated">
+          <button class="accordion-header">
+            <span><span class="card-label label-industry">Industry</span> How do you stay current with industry trends and ensure curriculum reflects workforce needs?</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              <p><strong>Guidance:</strong> Show ongoing professional development and industry connections. Mention specific sources, partnerships, and how you translate trends to curriculum.</p>
+              <h4>Key Talking Points:</h4>
+              <ul>
+                <li>Maintain industry certifications and attend trade conferences</li>
+                <li>Serve on advisory committees with local employers</li>
+                <li>Follow BLS, O*NET, and industry association reports</li>
+                <li>Regularly update curriculum based on emerging tools and practices</li>
+                <li>Invite industry guest speakers and arrange virtual job shadows</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item searchable-card" data-keywords="struggling student technology support help tech anxious">
+          <button class="accordion-header">
+            <span><span class="card-label label-support">Support</span> How would you handle a student struggling with technology for virtual learning?</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              <p><strong>Guidance:</strong> Show empathy, problem-solving, and individualized support. Adult learners may have tech anxiety — address it respectfully.</p>
+              <h4>Key Talking Points:</h4>
+              <ul>
+                <li>Conduct technology orientation at course start</li>
+                <li>Provide step-by-step guides and video tutorials for tools</li>
+                <li>Offer one-on-one virtual office hours for tech support</li>
+                <li>Connect students with institutional tech support resources</li>
+                <li>Create a peer buddy system for tech-confident and tech-anxious students</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item searchable-card" data-keywords="curriculum development standards alignment backward design">
+          <button class="accordion-header">
+            <span><span class="card-label label-curriculum">Curriculum</span> Describe your experience with curriculum development and standards alignment.</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              <p><strong>Guidance:</strong> Show systematic approach — backward design, standards alignment, industry input, continuous improvement cycle.</p>
+              <h4>Key Talking Points:</h4>
+              <ul>
+                <li>Use backward design (Wiggins & McTighe) starting with outcomes</li>
+                <li>Align with Perkins V requirements and industry certifications</li>
+                <li>Engage advisory boards for employer input on competencies</li>
+                <li>Integrate AI tools and emerging technology where applicable</li>
+                <li>Conduct regular curriculum reviews using student outcome data</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item searchable-card" data-keywords="safety tools equipment remote PPE OSHA compliance">
+          <button class="accordion-header">
+            <span><span class="card-label label-safety">Safety</span> How do you ensure safe use of tools and equipment in a remote learning environment?</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              <p><strong>Guidance:</strong> Critical question for CTE. Show you take safety seriously even in virtual settings. Mention specific protocols.</p>
+              <h4>Key Talking Points:</h4>
+              <ul>
+                <li>Detailed safety orientations before any hands-on work</li>
+                <li>Video demonstrations emphasizing safety procedures step by step</li>
+                <li>Safety quizzes as prerequisites before practical assignments</li>
+                <li>Require students to document their workspace and PPE before starting</li>
+                <li>Compliance with OSHA standards and institutional safety policies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item searchable-card" data-keywords="teaching philosophy adult vocational education andragogy">
+          <button class="accordion-header">
+            <span><span class="card-label label-philosophy">Philosophy</span> What is your teaching philosophy for adult vocational education?</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              <p><strong>Guidance:</strong> Connect andragogy principles with practical CTE teaching. Show passion for adult learners and workforce development.</p>
+              <h4>Key Talking Points:</h4>
+              <ul>
+                <li>Grounded in andragogy — respect adults as self-directed learners</li>
+                <li>Every lesson must answer "Why does this matter for your career?"</li>
+                <li>Balance high expectations with high support</li>
+                <li>Emphasize competency and real-world application over memorization</li>
+                <li>Foster a growth mindset — most adults are career changers or upskilling</li>
+                <li>Create inclusive, respectful learning communities</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item searchable-card" data-keywords="AI-enhanced lesson plan design trade specific">
+          <button class="accordion-header">
+            <span><span class="card-label label-ai">AI + Exercise</span> How would you design an AI-enhanced lesson for a specific trade?</span>
+          </button>
+          <div class="accordion-content">
+            <div class="accordion-body">
+              <p><strong>Guidance:</strong> This may be the exercise component. Be ready to create a lesson plan that naturally integrates AI. Use a specific trade example.</p>
+              <h4>Key Talking Points:</h4>
+              <ul>
+                <li>Choose a specific trade scenario (e.g., HVAC troubleshooting)</li>
+                <li>Learning objectives connecting both trade skills and AI literacy</li>
+                <li>Demonstrate an AI tool relevant to the trade in action</li>
+                <li>Students practice using the tool, then critically evaluate its output</li>
+                <li>Assessment: students explain when AI augments vs. limits their work</li>
+                <li>Include safety considerations and ethical AI use discussion</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== EXERCISE PREP ===== -->
+    <section id="section-exercises" class="section">
+      <div class="section-header">
+        <h2>Exercise Preparation</h2>
+        <p>What to expect and how to prepare for the exercise component of your interview</p>
+      </div>
+
+      <div class="card searchable-card" data-keywords="lesson plan creation exercise objectives procedure assessment">
+        <span class="card-label label-ai">Most Likely</span>
+        <h3>Exercise Type: Lesson Plan Creation</h3>
+        <p>You may be asked to create or outline a lesson plan that integrates AI into a vocational/technical topic. This is the most likely exercise.</p>
+        <h4>Preparation Tips:</h4>
+        <ul>
+          <li>Use a structured format: Objectives &rarr; Materials &rarr; Procedure &rarr; Assessment &rarr; Differentiation</li>
+          <li>Include measurable learning objectives using Bloom's Taxonomy verbs</li>
+          <li>Integrate at least one AI tool or concept naturally into the lesson</li>
+          <li>Show how you'd assess both technical skills AND AI literacy</li>
+          <li>Address diverse learner needs with built-in differentiation</li>
+          <li>Keep it practical — employers should recognize the skills being taught</li>
+          <li>Include a safety component if applicable to the trade</li>
+        </ul>
+      </div>
+
+      <!-- Sample Lesson Plan -->
+      <div class="lesson-plan searchable-card" data-keywords="sample lesson plan HVAC troubleshooting AI diagnostic template">
+        <h3>Sample Lesson Plan: AI-Assisted HVAC Troubleshooting</h3>
+        <span class="duration-badge">90 minutes — Virtual Synchronous</span>
+
+        <h4>Learning Objectives</h4>
+        <ul>
+          <li>Students will diagnose a common HVAC malfunction using both traditional methods and AI diagnostic tools</li>
+          <li>Students will evaluate the accuracy and limitations of AI recommendations</li>
+          <li>Students will document their troubleshooting process following industry standards</li>
+        </ul>
+
+        <h4>Materials</h4>
+        <p>AI diagnostic simulation, troubleshooting flowchart, virtual whiteboard, case study worksheet</p>
+
+        <h4>Lesson Timeline</h4>
+        <div class="timeline-item"><span class="timeline-time">10 min</span><span class="timeline-desc">Warm-up: Students share a recent troubleshooting experience from work</span></div>
+        <div class="timeline-item"><span class="timeline-time">15 min</span><span class="timeline-desc">Direct instruction: Introduction to AI diagnostic tools in HVAC industry</span></div>
+        <div class="timeline-item"><span class="timeline-time">20 min</span><span class="timeline-desc">Guided practice: Walk through a case using AI tool together as a class</span></div>
+        <div class="timeline-item"><span class="timeline-time">25 min</span><span class="timeline-desc">Independent practice: Students diagnose a new case, comparing AI output with manual analysis</span></div>
+        <div class="timeline-item"><span class="timeline-time">10 min</span><span class="timeline-desc">Discussion: When should we trust AI? When should we override it?</span></div>
+        <div class="timeline-item"><span class="timeline-time">10 min</span><span class="timeline-desc">Assessment & wrap-up: Exit ticket + reflection on AI's role in their trade</span></div>
+
+        <h4>Assessment</h4>
+        <p>Rubric-scored troubleshooting documentation + exit ticket on AI tool evaluation</p>
+
+        <h4>Differentiation</h4>
+        <p>Scaffolded case studies at varying complexity levels; option for oral vs. written documentation; extended time for English language learners</p>
+      </div>
+
+      <div class="card searchable-card" data-keywords="scenario response situational judgment STAR method">
+        <span class="card-label label-cte">Possible</span>
+        <h3>Exercise Type: Scenario Response / Situational Judgment</h3>
+        <p>You may be presented with a teaching scenario and asked how you'd respond.</p>
+        <h4>Preparation Tips:</h4>
+        <ul>
+          <li>Use STAR method: Situation, Task, Action, Result</li>
+          <li>Show empathy and student-centeredness in every response</li>
+          <li>Reference specific strategies, frameworks, or tools</li>
+          <li>Address both the immediate issue and the root cause</li>
+          <li>Include follow-up and prevention measures</li>
+          <li>Mention documentation and communication with stakeholders</li>
+        </ul>
+      </div>
+
+      <div class="card searchable-card" data-keywords="teaching demonstration mini-lesson presentation">
+        <span class="card-label label-virtual">Possible</span>
+        <h3>Exercise Type: Teaching Demonstration / Mini-Lesson</h3>
+        <p>You may need to deliver a brief teaching segment demonstrating your instructional skills.</p>
+        <h4>Preparation Tips:</h4>
+        <ul>
+          <li>Plan for 5-10 minutes maximum</li>
+          <li>Start with a hook — an engaging question, scenario, or visual</li>
+          <li>Demonstrate one clear concept or skill</li>
+          <li>Include an interactive element even in a short demo</li>
+          <li>Show AI integration naturally — don't force it</li>
+          <li>End with a check for understanding</li>
+          <li>Be enthusiastic and authentic — they're evaluating presence and passion</li>
+        </ul>
+      </div>
+
+      <div class="card searchable-card" data-keywords="written reflection essay teaching philosophy">
+        <span class="card-label label-philosophy">Possible</span>
+        <h3>Exercise Type: Written Reflection / Short Essay</h3>
+        <p>You may be asked to write a brief reflection on your teaching philosophy, AI in education, or a pedagogical scenario.</p>
+        <h4>Preparation Tips:</h4>
+        <ul>
+          <li>Be concise and structured — use clear paragraphs or bullet points</li>
+          <li>Ground your response in andragogy and CTE-specific frameworks</li>
+          <li>Include specific examples from your experience</li>
+          <li>Show awareness of current trends in AI and workforce development</li>
+          <li>Proofread carefully — written communication is a required skill</li>
+          <li>Balance theory with practical application</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== INDUSTRY TRENDS ===== -->
+    <section id="section-trends" class="section">
+      <div class="section-header">
+        <h2>Industry Trends</h2>
+        <p>Key trends shaping CTE, skilled trades, and AI in workforce development</p>
+      </div>
+
+      <div class="card trend-card searchable-card" data-keywords="AI augmentation skilled trades workers tools">
+        <span class="card-label label-ai">AI</span>
+        <h3>AI Augmentation in Skilled Trades</h3>
+        <p>AI is augmenting (not replacing) skilled trade workers. Electricians use AI for load calculations, plumbers use AI for pipe system design, construction workers use AI for project estimation.</p>
+        <div class="trend-impact"><strong>Impact:</strong> Workers who can collaborate with AI tools will be more productive and in higher demand.</div>
+        <p class="trend-relevance">Relevance: Teach students to work WITH AI as a tool, not fear it as a replacement. Focus on uniquely human skills: judgment, creativity, physical dexterity, client relations.</p>
+      </div>
+
+      <div class="card trend-card searchable-card" data-keywords="Perkins V Act federal legislation CTE quality accountability">
+        <span class="card-label label-industry">Policy</span>
+        <h3>Perkins V Act — Strengthening CTE</h3>
+        <p>Federal legislation supporting CTE with emphasis on program quality, alignment with in-demand occupations, and inclusion of emerging technologies. Requires comprehensive local needs assessments.</p>
+        <div class="trend-impact"><strong>Impact:</strong> CTE programs must demonstrate measurable outcomes and workforce alignment to maintain funding.</div>
+        <p class="trend-relevance">Relevance: Demonstrate awareness of Perkins V requirements and how your teaching aligns with its quality indicators and accountability measures.</p>
+      </div>
+
+      <div class="card trend-card searchable-card" data-keywords="micro-credentials digital badges stackable credentials certification">
+        <span class="card-label label-industry">Credentials</span>
+        <h3>Micro-Credentials & Digital Badges</h3>
+        <p>Industry moving toward stackable credentials that validate specific competencies. Preferred by employers over traditional degrees in many trades.</p>
+        <div class="trend-impact"><strong>Impact:</strong> Enables flexible, modular learning paths that adult learners can build over time while working.</div>
+        <p class="trend-relevance">Relevance: Design curriculum around stackable, industry-recognized credentials. Use digital badges to motivate and validate student progress.</p>
+      </div>
+
+      <div class="card trend-card searchable-card" data-keywords="skills gap workforce shortage trades construction manufacturing">
+        <span class="card-label label-industry">Workforce</span>
+        <h3>Skills Gap & Workforce Shortage in Trades</h3>
+        <p>Critical shortage of skilled trade workers. Millions of positions unfilled in construction, manufacturing, transportation. Average age of trade workers increasing.</p>
+        <div class="trend-impact"><strong>Impact:</strong> Massive demand for quality CTE instruction to build the next generation of trade professionals.</div>
+        <p class="trend-relevance">Relevance: Frame your role as addressing a national workforce crisis. Your teaching directly impacts economic development and community resilience.</p>
+      </div>
+
+      <div class="card trend-card searchable-card" data-keywords="remote hybrid learning virtual CTE online blended">
+        <span class="card-label label-virtual">Delivery</span>
+        <h3>Remote & Hybrid Learning in CTE</h3>
+        <p>Virtual and hybrid models combining online theory with in-person labs are now standard in many CTE programs.</p>
+        <div class="trend-impact"><strong>Impact:</strong> Expands access to CTE for rural learners, working adults, and underserved populations.</div>
+        <p class="trend-relevance">Relevance: Show comfort with virtual delivery and innovative approaches to teaching hands-on skills remotely. This is a core requirement of the role.</p>
+      </div>
+
+      <div class="card trend-card searchable-card" data-keywords="AI ethics responsible use education bias privacy transparency">
+        <span class="card-label label-ai">Ethics</span>
+        <h3>AI Ethics & Responsible Use in Education</h3>
+        <p>Growing emphasis on teaching AI literacy that includes ethical considerations — bias, privacy, transparency, and the human-in-the-loop principle.</p>
+        <div class="trend-impact"><strong>Impact:</strong> Educators must model responsible AI use while teaching students critical evaluation skills.</div>
+        <p class="trend-relevance">Relevance: Integrate AI ethics discussions into every AI-related lesson. Model responsible AI use in your own teaching practices.</p>
+      </div>
+
+      <div class="card trend-card searchable-card" data-keywords="employer educator partnerships advisory committees industry alignment">
+        <span class="card-label label-industry">Partnerships</span>
+        <h3>Employer-Educator Partnerships</h3>
+        <p>Increasing demand for CTE programs to be co-designed with industry partners. Advisory committees, work-based learning, and industry certifications drive curriculum.</p>
+        <div class="trend-impact"><strong>Impact:</strong> CTE programs with strong industry partnerships have higher placement rates and student satisfaction.</div>
+        <p class="trend-relevance">Relevance: Show experience or willingness to collaborate with industry. Mention advisory boards, employer input, and industry standards alignment.</p>
+      </div>
+    </section>
+
+    <!-- ===== QUICK REFERENCE ===== -->
+    <section id="section-reference" class="section">
+      <div class="section-header">
+        <h2>Quick Reference</h2>
+        <p>Essential frameworks, tips, and power phrases for your interview</p>
+      </div>
+
+      <!-- STAR Method -->
+      <div class="card searchable-card" data-keywords="STAR method behavioral questions situation task action result">
+        <h3>STAR Method for Behavioral Questions</h3>
+        <p>Structure your answers using this proven framework:</p>
+        <div class="star-grid">
+          <div class="star-item">
+            <div class="star-letter">S</div>
+            <div class="star-label">Situation</div>
+            <div class="star-desc">Set the scene — where, when, and the context</div>
+          </div>
+          <div class="star-item">
+            <div class="star-letter">T</div>
+            <div class="star-label">Task</div>
+            <div class="star-desc">What was your specific responsibility or challenge?</div>
+          </div>
+          <div class="star-item">
+            <div class="star-letter">A</div>
+            <div class="star-label">Action</div>
+            <div class="star-desc">What specific steps did YOU take? (Be detailed)</div>
+          </div>
+          <div class="star-item">
+            <div class="star-letter">R</div>
+            <div class="star-label">Result</div>
+            <div class="star-desc">What was the outcome? Use metrics if possible</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Interview Tips -->
+      <div class="card searchable-card" data-keywords="AI interview tips camera lighting video setup preparation">
+        <h3>AI Interview Performance Tips</h3>
+        <ul class="key-points">
+          <li>Look directly at the camera, not the screen — creates eye contact</li>
+          <li>Speak clearly and at a measured pace — AI may transcribe your responses</li>
+          <li>Use specific keywords from the job description naturally in your answers</li>
+          <li>Structure answers clearly — AI scoring favors organized responses</li>
+          <li>Pause briefly before answering to collect your thoughts</li>
+          <li>Show enthusiasm through vocal variation — AI detects engagement</li>
+          <li>Keep answers to 2-3 minutes maximum per question</li>
+          <li>Dress professionally — some AI systems analyze visual presentation</li>
+          <li>Ensure good lighting, clean background, and stable internet</li>
+          <li>Test your setup (camera, microphone, internet) well before the interview</li>
+        </ul>
+      </div>
+
+      <!-- Key Frameworks -->
+      <div class="card searchable-card" data-keywords="frameworks andragogy bloom UDL backward design TPACK Perkins ISTE ACTE">
+        <h3>Key Frameworks to Reference</h3>
+        <div class="quick-ref-grid">
+          <div class="quick-ref-card">
+            <h4>Instructional Design</h4>
+            <ul>
+              <li>Andragogy (Malcolm Knowles)</li>
+              <li>Bloom's Taxonomy</li>
+              <li>Backward Design (Wiggins & McTighe)</li>
+              <li>TPACK Framework</li>
+            </ul>
+          </div>
+          <div class="quick-ref-card">
+            <h4>Accessibility & Equity</h4>
+            <ul>
+              <li>UDL (Universal Design for Learning)</li>
+              <li>Culturally Responsive Teaching</li>
+              <li>ADA Compliance</li>
+              <li>Section 504</li>
+            </ul>
+          </div>
+          <div class="quick-ref-card">
+            <h4>CTE Policy & Standards</h4>
+            <ul>
+              <li>Perkins V Act</li>
+              <li>ACTE Quality Framework</li>
+              <li>ISTE Standards</li>
+              <li>Industry Certifications</li>
+            </ul>
+          </div>
+          <div class="quick-ref-card">
+            <h4>AI & Ethics</h4>
+            <ul>
+              <li>NIST AI Risk Management</li>
+              <li>IEEE AI Ethics</li>
+              <li>Human-in-the-Loop</li>
+              <li>AI Augmentation Model</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Power Phrases -->
+      <div class="card searchable-card" data-keywords="power phrases talking points sentences openers">
+        <h3>Power Phrases for Your Interview</h3>
+        <p>Natural sentence starters that demonstrate expertise:</p>
+        <div class="phrase-list">
+          <div class="phrase-item">"In my experience teaching adult learners in vocational programs..."</div>
+          <div class="phrase-item">"I integrate AI by focusing on practical, workforce-relevant applications..."</div>
+          <div class="phrase-item">"My assessment approach combines formative checks with performance-based evaluation..."</div>
+          <div class="phrase-item">"I believe in meeting learners where they are and building from their experience..."</div>
+          <div class="phrase-item">"Using data from learning analytics, I can identify struggling students early..."</div>
+          <div class="phrase-item">"I align curriculum with industry standards through ongoing employer partnerships..."</div>
+          <div class="phrase-item">"Safety is non-negotiable — I embed it into every lesson and assessment..."</div>
+          <div class="phrase-item">"I use a competency-based approach so students progress when they demonstrate mastery..."</div>
+        </div>
+      </div>
+
+      <!-- Final Reminders -->
+      <div class="card searchable-card" data-keywords="final reminders last minute checklist preparation">
+        <h3>Final Preparation Reminders</h3>
+        <ul class="key-points">
+          <li>Review the job posting one more time right before your interview</li>
+          <li>Prepare 2-3 specific examples from your teaching experience (STAR format)</li>
+          <li>Have a lesson plan draft ready to discuss or present</li>
+          <li>Know 3-4 AI tools relevant to CTE trades you can mention naturally</li>
+          <li>Practice answering out loud, not just reading — verbal fluency matters</li>
+          <li>Prepare a thoughtful question to ask if given the opportunity</li>
+          <li>Set up your interview space: lighting, background, camera angle, quiet environment</li>
+          <li>Log in 5-10 minutes early to test your technology</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
