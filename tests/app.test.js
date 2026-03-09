@@ -171,6 +171,12 @@ describe('Interview Prep Site', () => {
       const results = app.filterContent('');
       expect(results.length).toBe(2);
     });
+
+    test('filterContent shows result count in search-results div', () => {
+      app.filterContent('andragogy');
+      const resultsDiv = document.getElementById('search-results');
+      expect(resultsDiv.textContent).toContain('1 result');
+    });
   });
 
   describe('App Module - Timer', () => {
@@ -210,6 +216,14 @@ describe('Interview Prep Site', () => {
       app.resetTimer();
       expect(document.getElementById('timer-display').textContent).toBe('53:00');
     });
+
+    test('timer does not go negative', () => {
+      app.initTimer();
+      app.startTimer();
+      // Advance past zero (53 min + 10 extra seconds)
+      jest.advanceTimersByTime((53 * 60 + 10) * 1000);
+      expect(document.getElementById('timer-display').textContent).toBe('0:00');
+    });
   });
 
   describe('App Module - Accordion', () => {
@@ -245,6 +259,16 @@ describe('Interview Prep Site', () => {
       header.click(); // open
       header.click(); // close
       expect(header.parentElement.classList.contains('open')).toBe(false);
+    });
+
+    test('accordion sets aria-expanded attributes', () => {
+      app.initAccordion();
+      const header = document.querySelector('.accordion-header');
+      expect(header.getAttribute('aria-expanded')).toBe('false');
+      header.click();
+      expect(header.getAttribute('aria-expanded')).toBe('true');
+      header.click();
+      expect(header.getAttribute('aria-expanded')).toBe('false');
     });
   });
 

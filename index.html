@@ -8,6 +8,8 @@
 </head>
 <body>
 
+  <a href="#content" class="skip-link">Skip to main content</a>
+
   <!-- ========== HEADER ========== -->
   <header class="site-header">
     <div class="header-content">
@@ -52,10 +54,11 @@
   <!-- ========== SEARCH ========== -->
   <div class="search-container">
     <input type="text" id="search-input" placeholder="Search topics, keywords, questions..." aria-label="Search interview prep content">
+    <div id="search-results" aria-live="polite" style="font-size:0.8rem;color:var(--text-secondary);margin-top:0.35rem;min-height:1.2em;"></div>
   </div>
 
   <!-- ========== MAIN CONTENT ========== -->
-  <main class="main-content">
+  <main class="main-content" id="content">
 
     <!-- ===== OVERVIEW ===== -->
     <section id="section-overview" class="section active">
