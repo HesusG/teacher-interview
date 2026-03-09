@@ -504,6 +504,86 @@ const interviewData = {
         { letter: "R", label: "Result", description: "What was the outcome? Use metrics if possible" }
       ]
     },
+    aiInterviewFormat: {
+      title: "What to Expect: AI Interview Format",
+      description: "This is a one-way asynchronous video interview on a platform like HireVue, Spark Hire, or VidCruiter. There is no live interviewer — you record video responses to pre-set questions and the AI analyzes your responses.",
+      timeline: [
+        { segment: "Intro & Setup", time: "3-5 min", details: "Tech check, instructions, practice question" },
+        { segment: "Interview Questions", time: "25-30 min", details: "5-8 questions, 2-4 min recording each, 30s-2min prep time per question" },
+        { segment: "Exercise", time: "15-20 min", details: "Practical task — lesson plan, scenario response, or teaching demo" },
+        { segment: "Buffer/Transitions", time: "3-5 min", details: "Reading prompts, transitions between sections" }
+      ],
+      scoringCriteria: [
+        { criterion: "Content Relevance & Keywords", weight: "HIGH", description: "AI transcribes speech and matches for job-relevant terminology: curriculum development, competency-based, andragogy, AI integration, differentiated instruction, workforce development" },
+        { criterion: "Response Structure (STAR)", weight: "HIGH", description: "Well-structured responses with Situation-Task-Action-Result score higher. AI detects organized vs. rambling answers" },
+        { criterion: "Communication Clarity", weight: "MEDIUM-HIGH", description: "Sentence completeness, vocabulary level, filler word frequency (um, uh, like), pace, confidence indicators" },
+        { criterion: "Sentiment & Enthusiasm", weight: "MEDIUM", description: "Sentiment analysis gauges positivity, passion, and energy in word choice and vocal tone" },
+        { criterion: "Answer Completeness", weight: "MEDIUM", description: "Did you address all parts? AI flags responses under 30 seconds or that miss components" },
+        { criterion: "Professional Presentation", weight: "LOW-MEDIUM", description: "Human reviewers note: professional appearance, eye contact with camera, background, lighting, audio quality" }
+      ]
+    },
+    starExamples: [
+      {
+        title: "Implementing New Technology in CTE",
+        situation: "CTE program was using outdated software tools that didn't reflect employer needs.",
+        task: "Research, propose, and implement transition to industry-current AI tools while minimizing disruption.",
+        action: "Surveyed advisory board employers for top 3 tools; piloted in one section; created onboarding materials; held extra lab hours; documented the process for other instructors.",
+        result: "20% increase in 'real-world relevance' course evaluation scores. Two employers began offering internships. Other instructors adopted the materials next semester."
+      },
+      {
+        title: "Helping a Struggling Adult Learner",
+        situation: "Adult learner career-changer from retail management with no tech background falling behind in AI fundamentals.",
+        task: "Support the student without lowering standards or taking time from on-track students.",
+        action: "One-on-one meeting to identify barriers; created annotated walkthroughs with real-world analogies; paired with peer mentor; introduced no-code AI tools as a conceptual bridge.",
+        result: "Student earned a B+, passed certification, hired as junior AI operations coordinator within 3 months. Peer mentoring built into standard course structure."
+      },
+      {
+        title: "Adapting Curriculum to AI Changes",
+        situation: "Generative AI tools emerged; existing curriculum focused on traditional methods; students and employers demanded prompt engineering skills.",
+        task: "Rapidly update curriculum to include generative AI without abandoning foundational content.",
+        action: "Restructured into foundations track (traditional skills, safety, ethics) and applications track (AI tools, prompt engineering, tool evaluation). Created hands-on labs with real CTE tasks. Added AI ethics module.",
+        result: "35% enrollment increase next semester. Students presented at regional CTE conference. Program featured as model for responsive curriculum development."
+      },
+      {
+        title: "Building Industry Partnerships",
+        situation: "Advisory board involvement limited to annual meetings; disconnect between curriculum and employer needs.",
+        task: "Transform advisory board from compliance checkbox to active partnership.",
+        action: "Quarterly lunch-and-learn sessions; employers co-designed capstone project; 'guest expert' rotation; established ongoing communication channel.",
+        result: "8 new internship placements (up from 2), $10K in donated software licenses, job placement rate from 68% to 84%. Model adopted by two other CTE programs."
+      },
+      {
+        title: "Responding to Mid-Semester Feedback",
+        situation: "Mid-semester evaluations said instruction was too lecture-heavy; students wanted more hands-on time.",
+        task: "Adjust approach mid-semester without losing curricular ground; demonstrate student voice matters.",
+        action: "Acknowledged feedback openly in class; restructured to 20/80 model (20% instruction, 80% practice); converted lectures to interactive labs; implemented exit tickets for real-time feedback.",
+        result: "Satisfaction scores from 3.2 to 4.5/5. Practical assessment performance up 25%. Shared approach at faculty development workshop."
+      }
+    ],
+    gamePlan: {
+      title: "53-Minute Game Plan",
+      before: [
+        "Research the institution — programs, mission, demographics, AI initiatives",
+        "Highlight every keyword from the job posting and practice using them naturally",
+        "Prepare 6-8 STAR stories covering: technology implementation, student success, curriculum development, collaboration, adaptability",
+        "Practice 2-3 times with a timer, recording yourself on your phone",
+        "Set up your space: lighting in front (not behind), neutral background, camera at eye level",
+        "Test tech 1 hour before — camera, mic, internet, platform login",
+        "Dress professionally. Have water and brief bullet notes (not a script) nearby"
+      ],
+      during: [
+        { time: "Min 1-5", action: "Tech check and warm-up. Breathe. Settle in. Do the practice question." },
+        { time: "Min 5-35", action: "Interview questions. STAR method. Hit keywords. Use specific examples with metrics." },
+        { time: "Min 35-50", action: "Exercise component. Read the full prompt before starting. Plan first, then write/speak. Use frameworks." },
+        { time: "Min 50-53", action: "Review and submit. Check written work for completeness. End confidently." }
+      ],
+      emergency: [
+        "Blank on a question: 'That's a great question. Let me think about the best example...' (buys 5 seconds)",
+        "Run out of things to say: Summarize your main point and end confidently",
+        "Tech fails: Most platforms allow refresh and resume — don't panic",
+        "Running over time: Wrap up with your result/outcome — that's the most important part",
+        "Unfamiliar exercise prompt: Use your CTE frameworks and adapt; show your process, not just your answer"
+      ]
+    },
     keyFrameworks: [
       "Andragogy (Malcolm Knowles) — Adult Learning Theory",
       "Bloom's Taxonomy — Learning Objectives Hierarchy",
